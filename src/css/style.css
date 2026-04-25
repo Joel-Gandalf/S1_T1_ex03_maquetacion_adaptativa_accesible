@@ -31,12 +31,14 @@ h1{
     text-align: center;
     margin: 3vh 0 2vh;
 }
+
 nav {
     background: black;
     text-align: center;
     width: 16%;
     margin: 0 auto 5vh;
 }
+
 nav a{
     background: black;
     color: var(--White);
@@ -46,29 +48,31 @@ nav a{
     padding: 1px;
     display: inline-flex;
 }
+
 nav a:hover{
     background: var(--White);
     color: var(--black);
 }
 
-main{
-    margin: 0 0 100px;
-}
 .flex-box-general {
     display: flex;
+    max-width: 1900px;
     column-gap: 5vw;
-    margin: 5vh;
-
-    /* flex-wrap: wrap; */
-    
+    margin: 5vh auto 10vh;
+    padding: 0 2vw;
+    justify-content: center;
 }
 
 .info{
     background: var(--Gold);
     padding: 4vh 4.5vw;
     border-radius: 15px;
-    max-width: 25%;
+    max-width: 27em;
+    min-width: 10em;
     max-height: fit-content;
+    position: sticky;
+    top: 10px;
+    
 }
 
 .info h2{
@@ -85,42 +89,31 @@ main{
     font-weight: 300;
     font-style: normal;
     text-align: justify;
-
 }
 
 .images{
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* grid-template-rows: ; */
-    gap: 3vh 3vw;
-    /* align-items: flex-start;
-    justify-items: flex-start; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    gap: 3vh 2.5vw;
 }
-
-/* .images div{
-    max-width: 400px;
-} */
 
 .images img{
     border-radius: 15px;
     width: 100%;
-    /* max-width: 400px; */
     height: auto;
     display: block;
-    /* max-width: 400px;
-    min-width: 100px; */
 }
 
 #return-button{
+    display: block;
     width: fit-content;
     height: fit-content;
+    margin: auto;
     padding: 1em;
-    border: 2px solid var(--black);
-    border-radius: 10px;
+    box-shadow: 0 0 17px var(--black);
+    border-radius: 15px;
     background: var(--Orange_brown);
-
-
 }
 
 #return-button a{
@@ -129,17 +122,13 @@ main{
     font-size: 1.2em;
     font-weight: 800;
     color: var(--Very_dark_blue1);
-
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: var(--black);
   color: var(--White);
-  /* text-align: center; */
+  margin-top: 3vh;
   padding: 2vh 2vw;
   display: flex;
   align-items: center;
@@ -149,7 +138,7 @@ footer {
 .social-media{
     display: flex;
     flex-direction: row;
-    gap: 0.5vw;
+    gap: 0.6vw;
     justify-content: flex-start;
     align-content: center;
     width: 20vw;
