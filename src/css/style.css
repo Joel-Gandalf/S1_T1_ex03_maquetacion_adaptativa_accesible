@@ -13,6 +13,7 @@
     --Very_dark_blue3: #32B7EC;
     /* (line) */
     --Font_titles: "Amatic SC", sans-serif;
+    --Font_paragraph: "JetBrains Mono", monospace;
 }
 
 *{
@@ -50,8 +51,10 @@ nav a:hover{
     color: var(--black);
 }
 
-main {
+.flex-box {
     display: flex;
+    column-gap: 2vw;
+    margin: 5vh;
 }
 
 .info{
@@ -68,7 +71,7 @@ main {
 }
 
 .info p{
-    font-family: "JetBrains Mono", monospace;
+    font-family: var(--Font_paragraph);
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -83,8 +86,11 @@ footer {
   width: 100%;
   background-color: var(--black);
   color: var(--White);
-  text-align: center;
-  padding: 14px 16px;
+  /* text-align: center; */
+  padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-media{
@@ -99,4 +105,9 @@ footer {
 
 .social-media a{
     width: 2.5vw;
+}
+
+footer p{
+    font-family: var(--Font_paragraph);
+    font-size: 1.15em;
 }
