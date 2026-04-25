@@ -1,3 +1,82 @@
-/*
-    Aquí va tu código CSS
-*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+:root{
+    --black: hsl(210, 9%, 4%);
+    --White: hsl(0, 0%, 100%);
+    --Gold: hsl(47, 83%, 56%);
+    --Orange_brown: hsl(17, 83%, 56%);;
+    --Very_dark_blue1: hsl(217, 54%, 11%);
+    /* (main BG) */
+    --Very_dark_blue2: #6732EC;;
+    /* (card BG) */
+    --Very_dark_blue3: #32B7EC;;
+    /* (line) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Amatic SC", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 3vh 0 2vh;
+}
+nav {
+    background: black;
+    text-align: center;
+    width: 16%;
+    margin: 0 auto 5vh;
+}
+nav a{
+    background: black;
+    color: var(--White);
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin: 2.5%;
+    padding: 1px;
+    display: inline-flex;
+}
+nav a:hover{
+    background: var(--White);
+    color: var(--black);
+}
+
+p{    
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--White);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    justify-content: flex-start;
+    align-content: center;
+    width: 20vw;
+    height: min-content;
+}
+
+.social-media a{
+    width: 2.5vw;
+}
