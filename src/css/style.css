@@ -51,15 +51,24 @@ nav a:hover{
     color: var(--black);
 }
 
-.flex-box {
+main{
+    margin: 0 0 100px;
+}
+.flex-box-general {
     display: flex;
-    column-gap: 2vw;
+    column-gap: 5vw;
     margin: 5vh;
+
+    /* flex-wrap: wrap; */
+    
 }
 
 .info{
     background: var(--Gold);
-    padding: 5vw;
+    padding: 4vh 4.5vw;
+    border-radius: 15px;
+    max-width: 25%;
+    max-height: fit-content;
 }
 
 .info h2{
@@ -76,6 +85,50 @@ nav a:hover{
     font-weight: 300;
     font-style: normal;
     text-align: justify;
+
+}
+
+.images{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-rows: ; */
+    gap: 3vh 3vw;
+    /* align-items: flex-start;
+    justify-items: flex-start; */
+}
+
+/* .images div{
+    max-width: 400px;
+} */
+
+.images img{
+    border-radius: 15px;
+    width: 100%;
+    /* max-width: 400px; */
+    height: auto;
+    display: block;
+    /* max-width: 400px;
+    min-width: 100px; */
+}
+
+#return-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    background: var(--Orange_brown);
+
+
+}
+
+#return-button a{
+    text-decoration: none;
+    font-family: var(--Font_paragraph);
+    font-size: 1.2em;
+    font-weight: 800;
+    color: var(--Very_dark_blue1);
 
 }
 
