@@ -22,7 +22,7 @@
 h1{
     font-family: var(--Font_titles);
     font-optical-sizing: auto;
-    font-size: 5vw;
+    font-size: clamp(2.4rem, 5vw, 5rem);
     font-weight: 700;
     text-align: center;
     margin: 3vh 0 2vh;
@@ -32,6 +32,7 @@ nav {
     background: var(--black);
     text-align: center;
     width: 16%;
+    min-width: 250px;
     margin: 0 auto 5vh;
 }
 
@@ -39,7 +40,7 @@ nav a{
     background: var(--black);
     color: var(--White);
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 1.5vw, 1.7rem);
     margin: 2.5%;
     padding: 1px;
     display: inline-flex;
@@ -70,10 +71,11 @@ main{
 .info{
 
     background: var(--Gold);
-    padding: 32px;
+    padding: 32px 34px 38px;
     border-radius: 15px;
     width: 100%;
     max-width: 300px;
+    min-width: 250px;
     flex-shrink: 0;
     max-height: fit-content;
     /* padding: 4vh 4.5vw;
@@ -84,7 +86,7 @@ main{
 
 .info h2{
     font-family: var(--Font_titles);
-    font-size: 2vw;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
     font-weight: 800;
     text-align: center;
     margin-bottom: 2vh;
@@ -92,9 +94,9 @@ main{
 
 .info p{
     font-family: var(--Font_paragraph);
+    font-size: (0.9rem, 1vw + 0.5rem, 1.1rem);
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
     text-align: justify;
 }
 
@@ -136,7 +138,7 @@ main{
 #return-button a{
     text-decoration: none;
     font-family: var(--Font_paragraph);
-    font-size: 1.2em;
+    font-size: clamp(0.9rem, 1.15vw, 1.3rem);
     font-weight: 800;
     color: var(--Very_dark_blue);
 }
@@ -150,25 +152,33 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 80px;
 }
 
 .social-media{
     display: flex;
     flex-direction: row;
-    gap: 0.6vw;
+    gap: 0.7vw;
     justify-content: flex-start;
     align-content: center;
     width: 20vw;
-    height: min-content;
+    /* height: 2.8vh; */
+    /* clamp(18vw, 20vw, 24vw)  */
 }
 
 .social-media a{
-    width: 2.5vw;
+    width: clamp(1.7rem, 2.5vw, 2.6rem);
+    /* height: 2.8vh; */
 }
+
+/* .icons{
+    width: 100%;
+    height: auto;
+} */
 
 footer p{
     font-family: var(--Font_paragraph);
-    font-size: 1.15em;
+    font-size: clamp(0.9rem, 1.1vw, 1.3rem);
 }
 
 @media screen and (min-width: 992px) {
@@ -177,11 +187,11 @@ footer p{
         justify-content: center;
         align-items: flex-start;
     }
-    
     .info {
         width: 25%;
         position: sticky;
         top: 10px;
+        max-width: 350px;
     }
     .images{
         max-width: 940px;
