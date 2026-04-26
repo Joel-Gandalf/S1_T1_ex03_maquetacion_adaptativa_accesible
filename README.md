@@ -50,6 +50,7 @@ This project is a blog page for a fictional restomod bike club. It includes menu
 
 - In future projects, do not insert font styles using links. Download font styles and add them using files.
 - I still don't know how to solve the cache memory problem.
+- The comments in the CSS file are attempts to center the `.flex-box-general` class. This causes some minor issues on intermediate screen sizes.
 
 ## Contributors
 
