@@ -6,12 +6,8 @@
     --White: hsl(0, 0%, 100%);
     --Gold: hsl(47, 83%, 56%);
     --Orange_brown: hsl(17, 83%, 56%);;
-    --Very_dark_blue1: hsl(217, 54%, 11%);
-    /* (main BG) */
+    --Very_dark_blue: hsl(217, 54%, 11%);
     --Very_dark_blue2: #6732EC;
-    /* (card BG) */
-    --Very_dark_blue3: #32B7EC;
-    /* (line) */
     --Font_titles: "Amatic SC", sans-serif;
     --Font_paragraph: "JetBrains Mono", monospace;
 }
@@ -33,14 +29,14 @@ h1{
 }
 
 nav {
-    background: black;
+    background: var(--black);
     text-align: center;
     width: 16%;
     margin: 0 auto 5vh;
 }
 
 nav a{
-    background: black;
+    background: var(--black);
     color: var(--White);
     text-decoration: none;
     font-size: 1.5vw;
@@ -54,25 +50,38 @@ nav a:hover{
     color: var(--black);
 }
 
+main{
+    padding: 0 20px;
+}
+
 .flex-box-general {
     display: flex;
-    max-width: 1900px;
-    column-gap: 5vw;
-    margin: 5vh auto 10vh;
-    padding: 0 2vw;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    max-width: 95%;
+    /* max-width: 1600px; */
+    margin: 5vh auto; 
+    gap: 40px;
+    /* gap: 5vw; */
 }
 
 .info{
+
     background: var(--Gold);
+    padding: 32px;
+    /* padding: 4vh 2vw; */
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    /* max-width: 450px; */
+    flex-shrink: 0;
+    /* background: var(--Gold);
     padding: 4vh 4.5vw;
     border-radius: 15px;
     max-width: 27em;
-    min-width: 10em;
+    min-width: 10em; */
     max-height: fit-content;
-    position: sticky;
-    top: 10px;
-    
 }
 
 .info h2{
@@ -92,17 +101,29 @@ nav a:hover{
 }
 
 .images{
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-    gap: 3vh 2.5vw;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+    /* gap: 3vh 2.5vw; */
+
+    gap: 20px;
+    width: 100%;
+    max-width: 1080px;
+    justify-content: center;
+
+    align-content: center;
 }
 
 .images img{
-    border-radius: 15px;
     width: 100%;
+    /* max-width: 300px; */
     height: auto;
     display: block;
+    /* margin: 0 auto; */
+
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 #return-button{
@@ -121,7 +142,7 @@ nav a:hover{
     font-family: var(--Font_paragraph);
     font-size: 1.2em;
     font-weight: 800;
-    color: var(--Very_dark_blue1);
+    color: var(--Very_dark_blue);
 }
 
 footer {
@@ -152,4 +173,18 @@ footer {
 footer p{
     font-family: var(--Font_paragraph);
     font-size: 1.15em;
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box-general {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .info {
+        width: 25%;
+        position: sticky;
+        top: 10px;
+    }   
 }
