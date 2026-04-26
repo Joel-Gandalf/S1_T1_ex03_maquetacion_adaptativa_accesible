@@ -8,8 +8,9 @@ This project is a blog page for a fictional restomod bike club. It includes menu
 
 ## Preview
 
-<!-- Add a screenshot or GIF of your project here -->
-![Project preview](path/to/your/screenshot.png)
+![Project preview](src/assets/img/screenshot-Project-preview/screenshot-project_1.PNG)
+
+![Project preview](src/assets/img/screenshot-Project-preview/screenshot-project_2.PNG)
 
 ## Project Structure
 
@@ -38,6 +39,17 @@ This project is a blog page for a fictional restomod bike club. It includes menu
 - A modern web browser (Chrome, Firefox, Edge, Safari)
 - A code editor (recommended: VS Code)
 - Git installed 
+
+## Testing
+
+- ![Testing desktop](src/assets/img/screenshot-testing/screenshot-testing-project_desktop.PNG)
+- ![Testing mobile 1](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_1.PNG)
+- ![Testing mobile 2](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_2.PNG)
+
+### Troubleshooting
+
+- In future projects, do not insert font styles using links. Download font styles and add them using files.
+- I still don't know how to solve the cache memory problem.
 
 ## Contributors
 
