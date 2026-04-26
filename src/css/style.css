@@ -162,19 +162,11 @@ footer {
     justify-content: flex-start;
     align-content: center;
     width: 20vw;
-    /* height: 2.8vh; */
-    /* clamp(18vw, 20vw, 24vw)  */
 }
 
 .social-media a{
     width: clamp(1.7rem, 2.5vw, 2.6rem);
-    /* height: 2.8vh; */
 }
-
-/* .icons{
-    width: 100%;
-    height: auto;
-} */
 
 footer p{
     font-family: var(--Font_paragraph);
