@@ -42,9 +42,12 @@ This project is a blog page for a fictional restomod bike club. It includes menu
 
 ## Testing
 
-- ![Testing desktop](src/assets/img/screenshot-testing/screenshot-testing-project_desktop.PNG)
-- ![Testing mobile 1](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_1.PNG)
-- ![Testing mobile 2](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_2.PNG)
+- Result testing desktop  
+![Testing desktop](src/assets/img/screenshot-testing/screenshot-testing-project_desktop.PNG)
+
+- Result testing mobile  
+![Testing mobile 1](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_1.PNG)
+![Testing mobile 2](src/assets/img/screenshot-testing/screenshot-testing-project_mobile_2.PNG)
 
 ### Troubleshooting
 
